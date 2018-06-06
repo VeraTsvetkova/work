@@ -20,7 +20,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
 
 
-
+ <build>
+	 <plugins>
 <plugin>
     <groupId>com.smartbear.soapui</groupId>
     <artifactId>soapui-maven-plugin</artifactId>
@@ -58,4 +59,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
         </dependency>
     </dependencies>
 </plugin>
+	 </plugins>
+	 </build>
 </project>
