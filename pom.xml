@@ -171,11 +171,7 @@
 					</plugin>
 					
 					<plugin>
-					<parent>
-                      <groupId>com.smartbear.soapui</groupId>
-                      <artifactId>soapui-project</artifactId>
-                      <version>5.2.1</version>
-                   </parent>
+					
 
             <executions>
                 <execution>
