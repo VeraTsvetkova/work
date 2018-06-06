@@ -10,8 +10,7 @@
     <repository>
 	<id>SmartBearPluginRepository</id>
             <url>http://www.soapui.org/repository/maven2/</url>
-      <id>forplay-legacy</id>
-      <url>http://forplay.googlecode.com/svn/mavenrepo</url>
+      
     </repository>
 	<repository>
         <id>smartbear</id>
