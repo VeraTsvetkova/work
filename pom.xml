@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>VeraMaven</groupId>
     <artifactId>mavenRest</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -18,23 +17,17 @@
         <url>http://smartbearsoftware.com/repository/maven2</url>
     </repository>
   </repositories>
-  
-    
-  
     <dependencies>
         <dependency>
             <groupId>com.applitools</groupId>
             <artifactId>eyes-selenium-java</artifactId>
             <version>RELEASE</version>
         </dependency>
-
         <dependency>
             <groupId>org.jbehave</groupId>
             <artifactId>jbehave-core</artifactId>
             <version>3.2</version>
         </dependency>
-
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -71,14 +64,12 @@
             <artifactId>jbehave-maven-plugin</artifactId>
             <version>4.1.1</version>
         </dependency>
-        
 		<dependency>
         <groupId>soapui</groupId>
         <artifactId>SoapUI</artifactId>
         <version>5.2.1</version>
         <scope>test</scope>
     </dependency>
-		
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
@@ -90,8 +81,6 @@
             <version>2.4</version>
             <scope>test</scope>
         </dependency>
-
-
 		</dependencies>
 		<scm>
     <connection>scm:git:git://github.com/jenkinsci/maven-plugin.git</connection>
@@ -103,7 +92,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
-  
         <jbehave.version>4.1.1</jbehave.version>
         <junit.version>4.11</junit.version>
         <failsafe.and.surefire.version>2.16</failsafe.and.surefire.version>
@@ -140,13 +128,6 @@
                     </execution>
                 </executions>
       </plugin>
-	  
-	  
-
-            
-			     
-
-
 				<plugin>
 						<groupId>org.jbehave</groupId>
 						<artifactId>jbehave-maven-plugin</artifactId>
@@ -169,19 +150,14 @@
 						</execution>
 						</executions>
 					</plugin>
-					
 					<plugin>
-					
-
-            <executions>
+				<executions>
                 <execution>
                     <id>ba36a9f0-40bc-48d8-9fec-f0e7409d53e3</id>
                     <configuration>
                         <projectFile>thomas-TestSuite.xml</projectFile>
-
-                        <outputFolder>target/surefire-reports</outputFolder>
+                           <outputFolder>target/surefire-reports</outputFolder>
                         <testSuite>thomas TestSuite</testSuite>
-
                         <junitReport>true</junitReport>
                         <exportwAll>true</exportwAll>
                         <printReport>true</printReport>
@@ -198,7 +174,6 @@
                         <projectFile>RestAPI-negativeTestSuite.xml</projectFile>
                         <outputFolder>target/surefire-reports</outputFolder>
                         <testSuite>Negative tests</testSuite>
-
                         <junitReport>true</junitReport>
                         <exportwAll>true</exportwAll>
                         <printReport>true</printReport>
