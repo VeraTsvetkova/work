@@ -116,18 +116,6 @@
           <target>1.7</target>
         </configuration>
       </plugin>
-	  <plugin>  <!-- Create sources.jar -->
-            <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-      </plugin>
 				<plugin>
 						<groupId>org.jbehave</groupId>
 						<artifactId>jbehave-maven-plugin</artifactId>
@@ -151,6 +139,9 @@
 						</executions>
 					</plugin>
 					<plugin>
+					<groupId>com.smartbear.soapui</groupId>
+            <artifactId>soapui-maven-plugin</artifactId>
+            <version>5.0.0</version>
 				<executions>
                 <execution>
                     <id>ba36a9f0-40bc-48d8-9fec-f0e7409d53e3</id>
