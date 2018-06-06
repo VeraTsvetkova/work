@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -9,32 +10,52 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 <version>1.0-SNAPSHOT</version>
 <packaging>jar</packaging>
 <description>blah blah</description>
-<build>
-    <plugins>
-        <plugin>
-            <groupId>com.smartbear.soapui</groupId>
-            <artifactId>soapui-maven-plugin</artifactId>
-            <version>5.0.0</version>
+<pluginRepositories>
+    <pluginRepository>
+        <id>smartbear-sweden-plugin-repository</id>
+        <url>http://www.soapui.org/repository/maven2/</url>
+    </pluginRepository>
+</pluginRepositories>
 
-            <executions>
-                <execution>
-                    <id>RestAPI-positiveTestSuite</id>
-                    <configuration>
-                        <projectFile>thomas-TestSuite.xml</projectFile>
-                           <outputFolder>target/surefire-reports</outputFolder>
-                        <testSuite>thomas TestSuite</testSuite>
-                        <junitReport>true</junitReport>
-                        <exportwAll>true</exportwAll>
-                        <printReport>true</printReport>
-                        <testFailIgnore>true</testFailIgnore>
-                    </configuration>
-                    <goals>
-                        <goal>test</goal>
-                    </goals>
-                    <phase>test</phase>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
-</build>
-    </project>
+
+
+
+
+<plugin>
+    <groupId>com.smartbear.soapui</groupId>
+    <artifactId>soapui-maven-plugin</artifactId>
+    <version>${version.soapui}</version>
+    <configuration>
+        <projectFile>thomas-TestSuite.xml</projectFile>
+		<testSuite>thomas TestSuite</testSuite>
+        <outputFolder>target/surefire-reports</outputFolder>
+        <junitReport>true</junitReport>
+        <printReport>true</printReport>
+        <exportAll>true</exportAll>
+        <testFailIgnore>true</testFailIgnore>
+        <endpoint>${endpoint}</endpoint>
+    </configuration>
+    <executions>
+        <execution>
+            <id>DemographicDataServer</id>
+            <phase>test</phase>
+            <goals>
+                <goal>test</goal>
+            </goals>
+        </execution>
+    </executions>
+    <dependencies>
+        <dependency>
+            <groupId>com.smartbear.soapui</groupId>
+            <artifactId>soapui</artifactId>
+            <version>${version.soapui}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javafx</groupId>
+                    <artifactId>jfxrt</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+</plugin>
+</project>
