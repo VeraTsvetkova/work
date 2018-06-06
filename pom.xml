@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -11,6 +11,11 @@
     <repository>
       <id>forplay-legacy</id>
       <url>http://forplay.googlecode.com/svn/mavenrepo</url>
+    </repository>
+	<repository>
+        <id>smartbear</id>
+        <name>smartbear repository</name>
+        <url>http://smartbearsoftware.com/repository/maven2</url>
     </repository>
   </repositories>
     <dependencies>
@@ -69,6 +74,12 @@
 		  <version>2.20</version>
 		  <type>maven-plugin</type>
 		</dependency>
+		<dependency>
+        <groupId>soapui</groupId>
+        <artifactId>SoapUI</artifactId>
+        <version>5.2.1</version>
+        <scope>test</scope>
+    </dependency>
 		
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
@@ -143,9 +154,11 @@
 					</plugin>
 					
 					<plugin>
-            <groupId>com.smartbear.soapui</groupId>
-            <artifactId>soapui-maven-plugin</artifactId>
-            <version>5.0.0</version>
+					<parent>
+                      <groupId>com.smartbear.soapui</groupId>
+                      <artifactId>soapui-project</artifactId>
+                      <version>5.2.1</version>
+                   </parent>
 
             <executions>
                 <execution>
