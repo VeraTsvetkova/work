@@ -102,8 +102,7 @@
 		<properties>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
-		<properties>
+  
         <jbehave.version>4.1.1</jbehave.version>
         <junit.version>4.11</junit.version>
         <failsafe.and.surefire.version>2.16</failsafe.and.surefire.version>
