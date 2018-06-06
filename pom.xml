@@ -147,7 +147,13 @@
 					<groupId>com.smartbear.soapui</groupId>
             <artifactId>soapui-maven-plugin</artifactId>
             <version>5.0.0</version>
-				<executions>
+				
+        </plugin>
+		<plugin>
+<groupId>com.smartbear.soapui</groupId>
+<artifactId>soapui-pro-maven-plugin</artifactId>
+<version>5.1.1</version>
+<executions>
                 <execution>
                     <id>ba36a9f0-40bc-48d8-9fec-f0e7409d53e3</id>
                     <configuration>
@@ -164,30 +170,7 @@
                     </goals>
                     <phase>test</phase>
                 </execution>
-                <execution>
-                    <id>RestAPI-negativeTestSuite</id>
-                    <configuration>
-                        <projectFile>RestAPI-negativeTestSuite.xml</projectFile>
-                        <outputFolder>target/surefire-reports</outputFolder>
-                        <testSuite>Negative tests</testSuite>
-                        <junitReport>true</junitReport>
-                        <exportwAll>true</exportwAll>
-                        <printReport>true</printReport>
-                        <testFailIgnore>true</testFailIgnore>
-                    </configuration>
-                    <goals>
-                        <goal>test</goal>
-                    </goals>
-                    <phase>test</phase>
-                </execution>
-            </executions>
-        </plugin>
-		<plugin>
-<groupId>com.smartbear.soapui</groupId>
-<artifactId>soapui-pro-maven-plugin</artifactId>
-<version>5.1.1</version>
-<configuration>
-</configuration>
+				</executions>
 <dependencies>
 <dependency>
 <groupId>org.reflections</groupId>
