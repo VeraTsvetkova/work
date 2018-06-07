@@ -30,7 +30,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
     <artifactId>soapui-maven-plugin</artifactId>
     <version>${version.soapui}</version>
     <configuration>
-        <projectFile>thomas-TestSuite.xml</projectFile>
+        <projectFile>thomasTestSuite.xml</projectFile>
 		<testSuite>thomas TestSuite</testSuite>
         <outputFolder>target/surefire-reports</outputFolder>
         <junitReport>true</junitReport>
