@@ -36,7 +36,7 @@
                         <outputFolder>target/surefire-reports</outputFolder>
                         <testSuite>thomas TestSuite</testSuite>
 
-                        <TestNgReport>true</TestNgReport>
+                        <junitReport>true</junitReport>
                         <exportwAll>true</exportwAll>
                         <printReport>true</printReport>
                         <testFailIgnore>true</testFailIgnore>
