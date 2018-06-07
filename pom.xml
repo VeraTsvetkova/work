@@ -31,7 +31,7 @@
                         <projectFile>thomasTestSuite.xml</projectFile>
 
                         <outputFolder>target/surefire-reports</outputFolder>
-                        <testSuite>Positive cases</testSuite>
+                        <testSuite>thomas TestSuite</testSuite>
 
                         <junitReport>true</junitReport>
                         <exportwAll>true</exportwAll>
