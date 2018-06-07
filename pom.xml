@@ -15,29 +15,19 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 </pluginRepositories>
 <build>
     <plugins>
-        <plugin>
-            <groupId>com.smartbear.soapui</groupId>
-            <artifactId>soapui-maven-plugin</artifactId>
-            <version>4.5.1</version>
-            <configuration>
-              <projectFile>thomasTestSuite.xml</projectFile>         
-            </configuration>     
-            <dependencies>
-                <dependency>
-                    <groupId>mysql</groupId>
-                    <artifactId>mysql-connector-java</artifactId>
-                    <version>5.1.6</version>
-                </dependency>
-            </dependencies>    
-            <executions>
-                <execution>
-                    <phase>test</phase>
-                    <goals>
-                        <goal>test</goal>
-                    </goals>                             
-                </execution>
-            </executions>
-        </plugin>
+       <plugins>
+    <plugin>
+        <groupId>com.smartbear.soapui</groupId>
+        <artifactId>soapui-maven-plugin</artifactId>
+        <version>4.6.1</version>
+        <configuration>
+            <projectFile>simple-test-soapui-project.xml</projectFile>
+            <projectProperties>
+                <value>message=Hello World!</value>
+            </projectProperties>
+        </configuration>
+    </plugin>
+</plugins
     </plugins>
 </build>
 </project>
