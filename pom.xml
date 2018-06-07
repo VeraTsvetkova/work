@@ -25,13 +25,8 @@
   <version>${java.version}</version>
   <scope>system</scope>
   <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
-              </dependency>
-              <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>6.9.8</version>
-      <scope>test</scope>
-    </dependency>
+              
+              
 </dependency>
               </dependencies>
                
