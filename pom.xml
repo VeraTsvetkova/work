@@ -27,7 +27,10 @@
   <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
 </dependency>
               </dependencies>
-                <configuration>
+               
+                <executions>
+                    <execution>
+                     <configuration>
                         <projectFile>thomasTestSuite.xml</projectFile>
 
                         <outputFolder>target/surefire-reports</outputFolder>
@@ -38,8 +41,6 @@
                         <printReport>true</printReport>
                         <testFailIgnore>true</testFailIgnore>
                     </configuration>
-                <executions>
-                    <execution>
                         <phase>test</phase>
                         <goals>
                             <goal>test</goal>
