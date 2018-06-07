@@ -28,11 +28,16 @@
 </dependency>
               </dependencies>
                 <configuration>
-                    <projectFile>soapui-maven-example.xml</projectFile>
-                    <projectProperties>
-                        <value>example=Hello World!</value>
-                    </projectProperties>
-                </configuration>
+                        <projectFile>thomasTestSuite.xml</projectFile>
+
+                        <outputFolder>target/surefire-reports</outputFolder>
+                        <testSuite>Positive cases</testSuite>
+
+                        <junitReport>true</junitReport>
+                        <exportwAll>true</exportwAll>
+                        <printReport>true</printReport>
+                        <testFailIgnore>true</testFailIgnore>
+                    </configuration>
                 <executions>
                     <execution>
                         <phase>test</phase>
