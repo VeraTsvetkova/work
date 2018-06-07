@@ -24,9 +24,7 @@
   <artifactId>jfxrt</artifactId>
   <version>${java.version}</version>
   <scope>system</scope>
-  <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
-              
-              
+  <systemPath>${java.home}/lib/jfxrt.jar</systemPath>         
 </dependency>
               <dependency>
     <groupId>junit</groupId>
