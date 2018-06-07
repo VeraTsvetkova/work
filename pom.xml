@@ -26,7 +26,7 @@
   <scope>system</scope>
   <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
 </dependency>
-              <\dependencies>
+              </dependencies>
                 <configuration>
                     <projectFile>soapui-maven-example.xml</projectFile>
                     <projectProperties>
